@@ -13,7 +13,8 @@
     "server": "node server.js",
     "dev:full": "npm run build && npm run server",
     "test:smoke": "node --test src-server/tests/smoke/*.test.js",
-    "test": "npm run test:smoke"
+    "test:unit": "node --test src-server/tests/unit/*.test.js",
+    "test": "npm run test:smoke && npm run test:unit"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.111.0",
